@@ -26,13 +26,13 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  config.action_mailer.default_url_options = { host: 'criptopro.herokuapp.com', port: 80 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 4000 }
    config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :address => "smtp.gmail.com",
     :port => "587",
-    :domain => "criptopro.herokuapp.com",
+    :domain => "localhost:4000",
     :user_name => "tareacripto1@gmail.com",
     :password => "qwerty*123",
     :authentication => "plain",
